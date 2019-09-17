@@ -13,6 +13,7 @@
                                 <h4>
                                     <a href="{{ $thread->path() }}">
                                         {{ $thread->title }}
+                                        {{ $thread->created_at->diffForHumans() }}
                                     </a>
                                 </h4>
                                 <div class="body">{{ $thread->body }}</div>
